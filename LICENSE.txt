@@ -1,0 +1,88 @@
+RTT-Secure License Agreement
+
+Copyright (c) 2024 RmnJL. All rights reserved.
+
+RTT-Secure - Advanced Enterprise Stealth Tunnel
+Version: 2.0
+
+GRANT OF LICENSE
+================
+
+Subject to the terms and conditions of this License Agreement, RmnJL ("Licensor") 
+hereby grants you a non-exclusive, non-transferable license to use RTT-Secure 
+("Software") for educational and security research purposes only.
+
+PERMITTED USES
+==============
+
+1. Educational research and learning about network security
+2. Security testing of your own networks and systems
+3. Academic research in cybersecurity field
+4. Personal use for privacy protection where legally permitted
+
+RESTRICTIONS
+============
+
+1. You may not use this software for any illegal activities
+2. You may not distribute this software without explicit permission
+3. You may not reverse engineer, decompile, or disassemble the software
+4. You may not remove or modify any copyright notices or licenses
+5. Commercial use requires separate licensing agreement
+
+DISCLAIMER OF WARRANTY
+======================
+
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+SOFTWARE.
+
+LIMITATION OF LIABILITY
+=======================
+
+IN NO EVENT SHALL RMNJL BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR 
+CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR 
+LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, 
+OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE 
+THIS SOFTWARE.
+
+COMPLIANCE WITH LAWS
+====================
+
+You agree to comply with all applicable local, state, national, and international 
+laws and regulations in your use of this software. The user is solely responsible 
+for ensuring that their use of this software complies with all applicable laws 
+in their jurisdiction.
+
+TERMINATION
+===========
+
+This license is effective until terminated. Your rights under this license will 
+terminate automatically without notice if you fail to comply with any term(s) 
+of this license.
+
+GOVERNING LAW
+=============
+
+This License Agreement shall be governed by and construed in accordance with 
+applicable international software licensing standards.
+
+CONTACT INFORMATION
+===================
+
+For licensing inquiries, technical support, or security vulnerability reports:
+Developer: RmnJL
+Project: RTT-Secure
+Version: 2.0
+
+By using this software, you acknowledge that you have read this License Agreement, 
+understand it, and agree to be bound by its terms and conditions.
+
+---
+
+RTT-Secure v2.0 - Advanced Enterprise Stealth Tunnel
+Designed and Developed by RmnJL
+Maximum Security | High Performance | Zero Logs
