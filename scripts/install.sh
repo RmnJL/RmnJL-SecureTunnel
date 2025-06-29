@@ -52,26 +52,26 @@ printf  "\n"
 printf  "\n"
 
 
-echo "downloading ReverseTlsTunnel"
+
+echo "downloading RmnJL-SecureTunnel (اختصاصی)"
 
 printf  "\n"
 
 
+esac
+wget  $URL -O v7.1_linux_amd64.zip
+
 case $(uname -m) in
-    x86_64)  URL="https://github.com/radkesvat/ReverseTlsTunnel/releases/download/V7.1/v7.1_linux_amd64.zip" ;;
-    arm)     URL="https://github.com/radkesvat/ReverseTlsTunnel/releases/download/V7.1/v7.1_linux_arm64.zip" ;;
-    aarch64) URL="https://github.com/radkesvat/ReverseTlsTunnel/releases/download/V7.1/v7.1_linux_arm64.zip" ;;
-    
+    x86_64)  URL="https://github.com/RmnJL/RmnJL-SecureTunnel/releases/latest/download/RmnJL_linux_amd64.zip" ;;
+    arm)     URL="https://github.com/RmnJL/RmnJL-SecureTunnel/releases/latest/download/RmnJL_linux_arm64.zip" ;;
+    aarch64) URL="https://github.com/RmnJL/RmnJL-SecureTunnel/releases/latest/download/RmnJL_linux_arm64.zip" ;;
     *)   echo "Unable to determine system architecture."; exit 1 ;;
 
-esac
 
-
-wget  $URL -O v7.1_linux_amd64.zip
-unzip -o v7.1_linux_amd64.zip
-chmod +x RTT
-rm v7.1_linux_amd64.zip
-
+wget  $URL -O RmnJL_linux.zip
+unzip -o RmnJL_linux.zip
+chmod +x RmnJL-SecureTunnel
+rm RmnJL_linux.zip
 echo "finished."
 
 printf  "\n"

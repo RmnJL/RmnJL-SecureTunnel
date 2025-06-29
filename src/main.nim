@@ -4,7 +4,7 @@
 # Designed and Developed by RmnJL
 # Version: 2.0 - Enhanced Security Edition
 
-import chronos
+import ../libs/chronos/chronos
 import std/[random, exitprocs]
 import system/ansi_c except SIGTERM
 from globals import nil
