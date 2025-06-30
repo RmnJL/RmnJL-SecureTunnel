@@ -7,8 +7,8 @@ import ../libs/sha2
 # Designed and Developed by RmnJL
 
 const version = "2.0-Secure"
-const author = "RmnJL"
-const project_name = "RmnJL-SecureTunnel"
+const author {.used.} = "RmnJL"
+const project_name {.used.} = "RmnJL-SecureTunnel"
 
 type RunMode*{.pure.} = enum
     unspecified, iran, kharej
@@ -254,7 +254,7 @@ proc init*() =
                         reset_iptable = false
 
                     of "multiport":
-                        multiport = true
+                        multi_port = true
 
                     of "keep-os-limit":
                         keep_system_limit = true
