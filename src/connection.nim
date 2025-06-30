@@ -4,7 +4,11 @@
 #
 # This file is part of RmnJL. Any previous author references, emails, or external links have been removed for security and privacy.
 #
-# All rights reserved. Unauthorized copying, modification, or distribution is strictly prohibited.
+# All rights reserved. Unauthorized coproc safeClose(con: Connection){.async.} =
+    con.flag_is_closing = true
+    # await con.writer.finish()
+    await sleepAsync(globals.connection_rewind.int * 1000)  # Convert to milliseconds
+    con.close(), modification, or distribution is strictly prohibited.
 
 # import overrides/[asyncnet]
 import chronos, chronos/asyncsync, chronos/transports/datagram
@@ -359,7 +363,7 @@ proc connect*(address: TransportAddress, scheme: SocketScheme = SocketScheme.Non
 proc safeClose(con: Connection){.async.} =
     con.flag_is_closing = true
     # await con.writer.finish()
-    await sleepAsync(globals.connection_rewind.int.seconds)
+    await sleepAsync(globals.connection_rewind.int)
     con.close()
 
 
