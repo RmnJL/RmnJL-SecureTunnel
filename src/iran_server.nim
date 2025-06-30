@@ -4,7 +4,7 @@
 
 import std/[strformat, strutils, random, endians, times]
 import chronos, chronos/transports/[datagram, ipnet], chronos/osdefs
-import libs/print, connection, pipe, bitops
+import ../libs/print, connection, pipe, bitops
 from globals import nil
 
 type

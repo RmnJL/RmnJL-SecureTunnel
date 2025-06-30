@@ -9,7 +9,7 @@
 # import overrides/[asyncnet]
 import chronos, chronos/asyncsync, chronos/transports/datagram
 import chronos/streams/[asyncstream, tlsstream, boundstream]
-import std/[tables, sequtils, times, strutils, net, random, hashes]
+import std/[tables, sequtils, times, strutils, net, random]
 import globals
 export asyncsync
 
@@ -359,7 +359,7 @@ proc connect*(address: TransportAddress, scheme: SocketScheme = SocketScheme.Non
 proc safeClose(con: Connection){.async.} =
     con.flag_is_closing = true
     # await con.writer.finish()
-    await sleepAsync(timer.seconds(globals.connection_rewind.int))
+    await sleepAsync(globals.connection_rewind.int.seconds)
     con.close()
 
 
@@ -376,7 +376,7 @@ template trackOldConnections*(conns: var Connections, age: uint) =
             )
         proc tracker(){.async.} =
             while true:
-                await sleepAsync(timer.seconds(1))
+                await sleepAsync(1.seconds)
                 checkAndRemove()
         asyncSpawn tracker()
 
@@ -397,14 +397,14 @@ template trackDeadConnections*(conns: UdpConnections or Connections, age: uint, 
             )
         proc tracker() {.async.} =
             while true:
-                await sleepAsync(timer.seconds(per))
+                await sleepAsync(per.seconds)
                 checkAndRemove()
         asyncSpawn tracker()
 
 proc startController*() {.async.} =
     while true:
         et = epochTime().uint
-        await sleepAsync(1000)
+        await sleepAsync(1.seconds)
 
         # echo GC_getStatistics()
     
