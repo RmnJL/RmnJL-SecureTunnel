@@ -8,7 +8,7 @@
 #  Apache License, version 2.0, (LICENSE-APACHEv2)
 #              MIT license (LICENSE-MIT)
 import std/[monotimes, strutils]
-import stew/results, httputils
+import results, httputils
 import ../../asyncloop
 import ../../streams/[asyncstream, boundstream, chunkstream]
 import httptable, httpcommon, httpbodyrw

@@ -17,7 +17,7 @@ else:
 
 from nativesockets import Port
 import std/[tables, strutils, heapqueue, deques]
-import stew/results
+import results
 import "."/[config, osdefs, oserrno, osutils, timer]
 
 export Port

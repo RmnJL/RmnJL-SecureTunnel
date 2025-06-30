@@ -31,7 +31,7 @@
 # support - changes could potentially be backported to nim but are not
 # backwards-compatible.
 
-import stew/results
+import results
 import osdefs, osutils, oserrno
 export results, oserrno
 

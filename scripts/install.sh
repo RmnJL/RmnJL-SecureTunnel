@@ -57,7 +57,13 @@ echo "downloading RmnJL-SecureTunnel (اختصاصی)"
 
 printf  "\n"
 
-
+# نصب وابستگی results برای chronos
+echo "Installing required Nimble packages (results)..."
+nimble install -y results
+if [ $? -ne 0 ]; then
+  echo "[!] Nimble install results failed. Please check your Nim/Nimble installation."
+  exit 1
+fi
 esac
 wget  $URL -O v7.1_linux_amd64.zip
 

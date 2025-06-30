@@ -64,11 +64,27 @@
 bash <(curl -fsSL https://raw.githubusercontent.com/RmnJL/RTT-Secure/master/scripts/RttSecure.sh)
 ```
 
+
 ### روش دوم - نصب دستی
 
 ```bash
 wget "https://raw.githubusercontent.com/RmnJL/RTT-Secure/master/scripts/install-secure.sh" -O install.sh && chmod +x install.sh && bash install.sh
 ```
+
+### نصب وابستگی‌های پروژه (قبل از build)
+
+حتماً قبل از build دستور زیر را اجرا کنید:
+
+```bash
+nimble install -y results
+```
+
+در صورت نیاز:
+```bash
+nimble install -y chronos stew
+```
+
+سپس build را طبق راهنما انجام دهید.
 
 ## 🏠 سرور داخلی (ایران)
 
