@@ -1,6 +1,6 @@
 import chronos
 import dns_resolve, hashes, ../libs/print, parseopt, strutils, random, net, osproc, strformat
-import checksums/sha1
+import ../libs/sha2
 
 # RTT-Secure Configuration
 # Enhanced Security and Performance Version
