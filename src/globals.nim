@@ -478,7 +478,7 @@ proc init*() =
         except CatchableError as e:
             raise e
 
-    password_hash = $(secureHash(password))
+    password_hash = $(sha256.digest(password))
     sh1 = hash(password_hash).uint32
     sh2 = hash(sh1).uint32
     sh3 = hash(sh2).uint32
