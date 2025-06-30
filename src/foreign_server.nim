@@ -9,7 +9,7 @@
 import chronos
 import chronos/streams/[tlsstream], chronos/transports/datagram
 import std/[strformat, net, random]
-import print, connection, pipe, bitops
+import libs/print, connection, pipe, bitops
 from globals import nil
 
 type
